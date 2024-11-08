@@ -17,7 +17,7 @@ const Banner = () => {
                         <p className='w-1/2 text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div className='space-x-5'>
                             <button className='btn bg-[#FF3811] text-white'>Discover More</button>
-                            <button className='btn border text-black border-[#FF3811] text-white'>Discover More</button>
+                            <button className='btn border text-black border-[#FF3811]'>Contact Us</button>
                         </div>
                     </div>
 
@@ -38,7 +38,7 @@ const Banner = () => {
                         <p className='w-1/2 text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div className='space-x-5'>
                             <button className='btn bg-[#FF3811] text-white'>Discover More</button>
-                            <button className='btn border text-black border-[#FF3811] text-white'>Discover More</button>
+                            <button className='btn border text-black border-[#FF3811]'>Contact Us</button>
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@ const Banner = () => {
                         <p className='w-1/2 text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div className='space-x-5'>
                             <button className='btn bg-[#FF3811] text-white'>Discover More</button>
-                            <button className='btn border text-black border-[#FF3811] text-white'>Discover More</button>
+                            <button className='btn border text-black border-[#FF3811]'>Contact Us</button>
                         </div>
                     </div>
 
@@ -78,7 +78,7 @@ const Banner = () => {
                         <p className='w-1/2 text-white'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div className='space-x-5'>
                             <button className='btn bg-[#FF3811] text-white'>Discover More</button>
-                            <button className='btn border text-black border-[#FF3811] text-white'>Discover More</button>
+                            <button className='btn border text-black border-[#FF3811]'>Contact Us</button>
                         </div>
                     </div>
 
