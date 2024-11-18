@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import loginImg from '../../assets/images/login/login.svg'
 import { useContext } from 'react'
 import { AuthContext } from '../../authProvider/AuthProvider'
@@ -7,6 +7,7 @@ const Login = () => {
 
     const {login} = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
     const handleForm = e =>{
         e.preventDefault();
         const email = e.target.email.value;
@@ -14,15 +15,16 @@ const Login = () => {
         login(email,password)
         .then(()=>{
             Swal.fire("Logged in Succesfully!");
-            navigate('/');
+            {
+                location?.state? navigate(location.state):navigate('/');
+            }
         })
         .catch(()=>{
             Swal.fire("An Error Occured! Try Again..");
         })
     }
     
-    
-    
+
     return (
 
         <div className="hero bg-base-200 py-10 rounded-lg">

@@ -5,13 +5,20 @@ import { AuthContext } from "../../authProvider/AuthProvider"
 import Swal from "sweetalert2"
 
 const Navbar = () => {
-    const { user, logout } = useContext(AuthContext);
-
+    const { user, logout, loading } = useContext(AuthContext);
+    if(loading){
+        return <progress className="progress w-56"></progress>
+    }
     const list = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
         <li><NavLink to="/blog">Blog</NavLink></li>
+        
+        {
+            
+            user && <li><NavLink to="/bookings">My Bookings</NavLink></li>
+        }
     </>
     const handleLogout = () => {
         logout()
