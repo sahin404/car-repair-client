@@ -15,9 +15,7 @@ const Login = () => {
         login(email,password)
         .then(()=>{
             Swal.fire("Logged in Succesfully!");
-            {
-                location?.state? navigate(location.state):navigate('/');
-            }
+            location?.state? navigate(location.state):navigate('/');
         })
         .catch(()=>{
             Swal.fire("An Error Occured! Try Again..");

@@ -8,7 +8,7 @@ const MyBookings = () => {
     useEffect(() => {
         if (user?.email) {
             const url = `http://localhost:5000/bookings?email=${user?.email}`;
-            fetch(url)
+            fetch(url, {credentials:'include'})
                 .then(res => res.json())
                 .then(data => setBookings(data));
            console.log(bookings);
